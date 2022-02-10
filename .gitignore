@@ -1,4 +1,31 @@
-.sass-cache/
-*.css.map
-*.sass.map
-*.scss.map
+# See https://help.github.com/ignore-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/bower_components
+# testing
+/coverage
+src/**/*.snap
+# production
+/build
+src/**/*.css
+
+# misc
+.DS_Store
+*.local
+*.log
+.idea
+*.iml
+!.gitkeep
+settings.json
+package-lock.json
+dist-story/
+.vscode
+.tern-project
+package/
+coverage/
+node_modules/
+dist/
+*.tgz
+yarn.lock
+
