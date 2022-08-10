@@ -1,3 +1,31 @@
+@import 'helper/css/mixins';
+*,
+*::before,
+*::after {
+  box-sizing: border-box; // 1
+}
+
+html {
+  font-family: sans-serif; // 2
+  line-height: 1.15; // 3
+  -webkit-text-size-adjust: 100%; // 4
+  -webkit-tap-highlight-color: rgba(#000, 0); // 5
+}
+
+body {
+    margin: 0;
+    background: rgba(255, 140, 0, 0.1); 
+}
+
 h2{
     color: #f00;
 }
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.clearfix {
+    @include clearfix();
+  }
